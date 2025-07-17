@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TgsRtcClone</title>
+    <style>
+    form{
+        margin:0 auto;
+        width: 700px;
+        /* text-align: center; */
+    }
+    table{
+        background-color: rgb(204, 223, 217);
+        width:700px;
+        height: 5px;
+        border-radius: 20px;
+
+    }
+    .head{
+        color: blue;
+
+    }
+    
+        </style>
+</head>
+<body><center>
+    <table cellspacing="1px">
+        <tr><td><center><img src="https://blogmedia.testbook.com/blog/wp-content/uploads/2023/05/emblem-4bcfa1d1.png" alt=""style="width:50px"></center></td></tr>
+        <tr><th colspan="4" cellspacing="2"cellpadding=2><h2 class="head"><b>TELANGANA STATE ROAD TRANSPORT CORPORATION</b></h2></th></tr>
+        <tr><th><h2>GENERAL BUS PASS APPLICATION</h2></th></tr>
+    </table></center><br>
+      <form action="./submit"method="get">
+    <fieldset><legend style="background-color: rgb(81, 157, 228); font-size: large;font-weight: bold;border-radius: 5px;color: aliceblue;">Applicant Details</legend>
+      
+        <label for="Name">Name <span style ="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="Name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <label for="father">Father's /Guardian <span style="color:red">* </span>&nbsp;</label>&nbsp;
+        <input type="text" id="father"><br><br>
+
+
+        <label for="Date of Birth">Date of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="Date of Birth">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label for="gender">Gender <span style="color:red">* </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="gender" name="gender" >Female
+        <input type="radio" id="gender" name="gender" >Male
+        <br><br>
+        
+
+        <label for="Age">Age As on</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="Age" >Year(s)
+        <input type="checkbox" id="Age">Month(s)
+        <input type="checkbox" id="Age">Day(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label for="no">Aadhaar No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" name="Aadhaar No"><br><br>
+
+
+
+        <label for="no">WhatsApp No <span style="color:red">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" name="WhatsApp No">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        
+        <label for="email">E-mail Id <span style="color:red">*&nbsp&nbsp;</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="mail"><br><br>
+
+        <label for="file">Photo <span style="color:red">*&nbsp&nbsp;</span></label>
+        <input type="file" accept=".jpg,.png" >
+    </fieldset>
+    <fieldset>
+        <legend style="background-color: rgb(81, 157, 228); font-size: large;font-weight: bold; border-radius: 5px;color: aliceblue;">Residential Address Details</legend>
+        <label for="address">Applicant's Address<span style ="color: red;">*</span></label>
+        <textarea name="address" id="address" cols="12" rows="10"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <label for="dist">District<span style ="color: red;">*</span></label>
+        <select name="dist" id="">
+        <option value="HYDERABAD" selected>HYDERABAD</option></select><br><br>
+
+
+       <label for="Mandal">Mandal <span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+       <select name="Mandal" id="Mandal">
+       <option value="HYDERABAD" selected>HYDERABAD</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       <label for="village">Village<span style="color:red">*</span></label>
+       <select name="village" id="village">
+       <option value="HYDERABAD" selected>HYDERABAD</option></select><br><br>
+
+       <label for="pin">Pincode<span style="color:red">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="tel" name="pin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend style="background-color: rgb(81, 157, 228); font-size: large;font-weight: bold;border-radius:5px;color: antiquewhite;">Pass Type Details</legend>
+        <label for="city">City<span style ="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+       <select name="city" id="city"><option value="Hyderabad">HYDERABAD</option></select><br><br>
+
+       <label for="pass">Pass Type<span style ="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+       <select name="pass" id="pass">
+        <option value="select" >---select---</option>
+        <option value="select" >Greater Pass</option>
+        <option value="select" >General Ordinary Route Pass MTLY</option>
+        <option value="select" >General Metro Express Route Pass MTLY</option>
+        <option value="select" >Metro Express Pass</option>
+        <option value="select" >Metro Deluxe Pass</option>
+        <option value="select" >General Pass</option>
+    </select><br><br>
+
+    </fieldset>
+    <fieldset>
+        <legend style="background-color: rgb(81, 157, 228); font-size: large;font-weight: bold;border-radius: 5px;color: antiquewhite;">Mode of Payment & Pass Collection</legend>
+        <label for="mode">Payment Mode</label>
+        <select name="mode" id="mode">
+            <option value="select" disabled>Select Payment Mode </option>
+            <option value="counter">Payment at Counter</option>
+        </select><br><br>
+
+
+        <label for="pass">Pass Delivery Mode</label>
+        <select name="pass" id="pass">
+            <option value="pass">Select Pass Delivery Mode</option>
+            <option value="pass"> at Counter</option>
+        </select><br><br>
+
+        <label for="tsrtc_center">Select Bus Pass Collection Center:</label>
+<select id="tsrtc_center" name="tsrtc_center" required>
+  <option value="" disabled selected>Select your center</option>
+  <option value="mgbs">Mahatma Gandhi Bus Station (MGBS)</option>
+  <option value="jbs">Jubilee Bus Station (JBS)</option>
+  <option value="ecil">ECIL Bus Station</option>
+  <option value="patancheru">Patancheru Bus Pass Counter</option>
+  <option value="khammam">Khammam</option>
+  <option value="nizamabad">Nizamabad</option>
+  <option value="siddipet">Siddipet</option>
+  <option value="nalgonda">Nalgonda</option>
+  <option value="mahbubnagar">Mahbubnagar</option>
+  <option value="adilabad">Adilabad</option>
+  <option value="jagtial">Jagtial</option>
+  <option value="mancherial">Mancherial</option>
+  <option value="miryalaguda">Miryalaguda</option>
+  <option value="bhadrachalam">Bhadrachalam</option>
+  <option value="suryapet">Suryapet</option>
+</select><br><br><label><center><img src="./captch.png" alt="" width="250px"><br>
+<input type="text"></center></label><br>
+     
+    <center><button type ="submit" style="text-align:center;">submit</button></center>
+
+    </fieldset>
+    
+    </form>
+</body>
+</html>
