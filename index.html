@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <!-- <form action="index1.html">
+        <label for="name">Username</label>
+        <input type="text" pattern="[a-zA-Z/d/s~!@#$%^&*()]{13,20}" id="name" name="name" required><br><br>
+
+        <label for="pass">Password</label>
+        <input type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[/d])(?=.*[~!@#$%^&*()_]){8}$"id="pass" name="pass" title="pls enter valid input" required><br><br>
+        <button>submit</button>
+    </form> -->
+    <form>
+    <label for="pass">Password:</label>
+    <input type="text"
+           id="pass"
+           name="pass"
+           required
+           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~!@#$%^&*()_]).{8,}$"
+           title="Must contain at least 1 lowercase, 1 uppercase, 1 digit, 1 special char (~!@#$%^&*()_), and 8+ characters">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  
+</body>
+</html>
