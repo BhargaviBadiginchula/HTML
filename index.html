@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+  <meta charset="UTF-8">
+  <title>Password Validation</title>
 </head>
 <body>
-    <!-- <form action="index1.html">
-        <label for="name">Username</label>
-        <input type="text" pattern="[a-zA-Z/d/s~!@#$%^&*()]{13,20}" id="name" name="name" required><br><br>
-
-        <label for="pass">Password</label>
-        <input type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[/d])(?=.*[~!@#$%^&*()_]){8}$"id="pass" name="pass" title="pls enter valid input" required><br><br>
-        <button>submit</button>
-    </form> -->
-    <form>
+  <form id="myForm">
     <label for="pass">Password:</label>
-    <input type="text"
-           id="pass"
-           name="pass"
-           required
-           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~!@#$%^&*()_]).{8,}$"
-           title="Must contain at least 1 lowercase, 1 uppercase, 1 digit, 1 special char (~!@#$%^&*()_), and 8+ characters">
+    <input type="password" id="pass" name="pass" required>
     <br><br>
     <button type="submit">Submit</button>
   </form>
-  
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      const password = document.getElementById("pass").value;
+      const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~!@#$%^&*()_]).{8,}$/;
+
+      if (!regex.test(password)) {
+        alert("❌ Invalid password.\nPassword must contain:\n- 1 lowercase\n- 1 uppercase\n- 1 digit\n- 1 special character\n- Minimum 8 characters.");
+        event.preventDefault();
+      } else {
+        // Allow submission to GitHub Pages or test.html
+        window.location.href = `test.html?pass=${encodeURIComponent(password)}`;
+        event.preventDefault(); // prevent actual submission
+      }
+    });
+  </script>
 </body>
 </html>
