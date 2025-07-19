@@ -12,11 +12,11 @@
         <input type="text" id="name" name="name" required placeholder="example:john_doe"pattern="[a-zA-Z\d\s~!@#$%^&*_]{10-20}"title="Username must be 10-20 characters using letters, numbers, or ~!@#$%^&*_"><br><br>
 
         <label for="mail">Email&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" id="mail" name="mail" required placeholder="example@gamil.com"pattern="[a-z\d!@#$%^&*_]+@(gmail|yahoo|brave|reddit).com"title="Email must be valid and end with @gmail.com, @yahoo.com, @brave.com, or @reddit.com"><br><br>
+        <input type="text" id="mail" name="mail" required placeholder="example@gmail.com"pattern="[a-z\d!@#$%^&*_]+@(gmail|yahoo|brave|reddit)\.com"title="Email must be valid and end with @gmail.com, @yahoo.com, @brave.com, or @reddit.com"><br><br> 
         <label for="pass">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" id="pass" name="pass" required placeholder="example%123"pattern="(?=.*[a-z])(?=.*[A-Z])([\d\s~!@#$%^&_]).{10-20}"title="Password must be 10-20 characters, include at least one lowercase, one uppercase letter, and one digit or special character"><br><br>
+        <input type="text" id="pass" name="pass" required placeholder="example%123"pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\s~!@#$%^&_]).{10,20}$"title="Password must be 10-20 characters, include at least one lowercase, one uppercase letter, and one digit or special character"><br><br>
         <label for="date">date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" id="date" name="date" required placeholder="dd/mm/yy"pattern="0[1-9]|[12][0-9]|3[01]/[0[1-9]|1[0-2]/[0-9]{4}]"title="Date must be in dd/mm/yyyy format (e.g., 05/09/2025)">
+        <input type="text" id="date" name="date" required placeholder="dd/mm/yyyy"pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}$"title="Date must be in dd/mm/yyyy format (e.g., 05/09/2025)">
     <br><br>
 <button>submit</button>
 </form>
